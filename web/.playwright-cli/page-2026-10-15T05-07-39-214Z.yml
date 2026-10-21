@@ -1,0 +1,55 @@
+- generic [ref=f2e3]:
+  - generic [ref=f2e4]:
+    - banner [ref=f2e5]:
+      - button "行序" [ref=f2e6] [cursor=pointer]
+      - generic [ref=f2e11]:
+        - generic [ref=f2e12]: F
+        - button "退出登录" [ref=f2e14] [cursor=pointer]
+    - main [ref=f2e105]:
+      - button "项目管理" [ref=f2e106] [cursor=pointer]
+      - generic [ref=f2e109]:
+        - generic [ref=f2e110]:
+          - generic [ref=f2e111]: 项目
+          - heading "902Existing" [level=1] [ref=f2e112]
+        - button "编辑项目" [ref=f2e113] [cursor=pointer]
+      - generic [ref=f2e118]:
+        - generic [ref=f2e119]: 洽谈
+        - generic [ref=f2e120]: 进行中
+        - generic [ref=f2e121]: 未设日期
+        - generic [ref=f2e124]: 未设计划
+      - navigation "项目视图" [ref=f2e127]:
+        - button "概览" [ref=f2e128] [cursor=pointer]
+        - button "文件1" [ref=f2e201] [cursor=pointer]
+        - button "任务0" [ref=f2e130] [cursor=pointer]
+        - button "节点0" [ref=f2e131] [cursor=pointer]
+        - button "问题0" [ref=f2e132] [cursor=pointer]
+        - button "会议1" [ref=f2e133] [cursor=pointer]
+      - generic [ref=f2e158]:
+        - generic [ref=f2e159]: 项目文件
+        - generic [ref=f2e160]:
+          - text: 上传文件
+          - button "上传项目文件" [ref=f2e164]
+      - generic [ref=f2e165]:
+        - textbox "搜索文件内容" [ref=f2e166]
+        - button "搜索" [disabled] [ref=f2e167]
+      - article [ref=f2e202]:
+        - generic [ref=f2e207]:
+          - heading "[codes] 隔离验收需求.md" [level=3] [ref=f2e208]
+          - paragraph [ref=f2e209]: V1 · 已识别
+          - paragraph [ref=f2e210]: 10/15 13:07 · 1 KB
+        - link "下载[codes] 隔离验收需求.md" [ref=f2e211] [cursor=pointer]:
+          - /url: /api/files/1fadaf98430546079bbc4ddd99745204/download
+      - generic [ref=f2e176]:
+        - heading "文档连接" [level=2] [ref=f2e177]
+        - button "连接" [ref=f2e178] [cursor=pointer]
+      - article [ref=f2e180]:
+        - generic [ref=f2e184]:
+          - heading "codes / 902Existing/docs" [level=3] [ref=f2e185]
+          - paragraph [ref=f2e186]: 已同步 · 10/15 13:07
+        - button "同步codes" [ref=f2e187] [cursor=pointer]
+        - button "断开codes" [ref=f2e193] [cursor=pointer]
+  - navigation "手机导航" [ref=f2e23]:
+    - button "首页" [ref=f2e24] [cursor=pointer]
+    - button "项目管理" [ref=f2e29] [cursor=pointer]
+    - button "产品库" [ref=f2e33] [cursor=pointer]
+    - button "工作台" [ref=f2e39] [cursor=pointer]

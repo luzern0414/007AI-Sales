@@ -1,0 +1,2 @@
+图标来自 Lucide（lucide-static 0.469.0），ISC 许可：https://github.com/lucide-icons/lucide/blob/main/LICENSE
+新增图标下载：https://unpkg.com/lucide-static@0.469.0/icons/<名称>.svg

@@ -1,0 +1,15 @@
+- generic [ref=f3e3]:
+  - generic [ref=f3e4]:
+    - banner [ref=f3e5]:
+      - button "行序" [ref=f3e6] [cursor=pointer]
+      - generic [ref=f3e11]:
+        - generic [ref=f3e12]: F
+        - button "退出登录" [ref=f3e14] [cursor=pointer]
+    - main [ref=f3e18]:
+      - status [ref=f3e19]:
+        - generic [ref=f3e22]: 加载中
+  - navigation "手机导航" [ref=f3e23]:
+    - button "首页" [ref=f3e24] [cursor=pointer]
+    - button "项目管理" [ref=f3e29] [cursor=pointer]
+    - button "产品库" [ref=f3e33] [cursor=pointer]
+    - button "工作台" [ref=f3e39] [cursor=pointer]

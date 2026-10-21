@@ -1,0 +1,12 @@
+- main [ref=f1e3]:
+  - generic [ref=f1e4]:
+    - generic [ref=f1e5]: 行序
+    - heading "创建管理员" [level=1] [ref=f1e12]
+    - group [ref=f1e14]:
+      - generic [ref=f1e15]:
+        - text: 账号
+        - textbox "账号" [active] [ref=f1e16]
+      - generic [ref=f1e17]:
+        - text: 密码
+        - textbox "密码" [ref=f1e18]
+      - button "创建并登录" [ref=f1e19] [cursor=pointer]

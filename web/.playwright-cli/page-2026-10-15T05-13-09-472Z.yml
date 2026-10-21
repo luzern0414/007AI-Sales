@@ -1,0 +1,56 @@
+- generic [ref=f2e3]:
+  - generic [ref=f2e4]:
+    - banner [ref=f2e5]:
+      - button "行序" [ref=f2e6] [cursor=pointer]
+      - generic [ref=f2e11]:
+        - generic [ref=f2e12]: F
+        - button "退出登录" [ref=f2e14] [cursor=pointer]
+    - main [ref=f2e489]:
+      - generic [ref=f2e490]:
+        - generic [ref=f2e491]:
+          - generic [ref=f2e492]: 10月15日星期四
+          - heading "今天" [level=1] [ref=f2e493]
+        - button "新建项目" [ref=f2e494] [cursor=pointer]
+      - button "开始录音记录" [ref=f2e496] [cursor=pointer]
+      - button "0 项待跟进 0 项逾期 · 0 项受阻" [ref=f2e497] [cursor=pointer]:
+        - generic [ref=f2e501]:
+          - strong [ref=f2e502]: 0 项待跟进
+          - generic [ref=f2e503]: 0 项逾期 · 0 项受阻
+      - generic [ref=f2e507]:
+        - heading "最近项目" [level=2] [ref=f2e508]
+        - button "全部" [ref=f2e509] [cursor=pointer]
+      - generic [ref=f2e512]:
+        - button "隔离无目录项目 未设客户·洽谈 未设计划 进行中 未设日期" [ref=f2e583] [cursor=pointer]:
+          - generic [ref=f2e587]:
+            - heading "隔离无目录项目" [level=3] [ref=f2e589]
+            - paragraph [ref=f2e593]: 未设客户·洽谈
+            - generic [ref=f2e594]: 未设计划
+            - generic [ref=f2e597]:
+              - generic [ref=f2e598]: 进行中
+              - generic [ref=f2e600]: 未设日期
+        - button "902Existing 未设客户·洽谈 未设计划 进行中 未设日期" [ref=f2e513] [cursor=pointer]:
+          - generic [ref=f2e517]:
+            - heading "902Existing" [level=3] [ref=f2e519]
+            - paragraph [ref=f2e523]: 未设客户·洽谈
+            - generic [ref=f2e524]: 未设计划
+            - generic [ref=f2e527]:
+              - generic [ref=f2e528]: 进行中
+              - generic [ref=f2e530]: 未设日期
+        - button "901FrontendCreated 未设客户·洽谈 未设计划 进行中 未设日期" [ref=f2e531] [cursor=pointer]:
+          - generic [ref=f2e535]:
+            - heading "901FrontendCreated" [level=3] [ref=f2e537]
+            - paragraph [ref=f2e541]: 未设客户·洽谈
+            - generic [ref=f2e542]: 未设计划
+            - generic [ref=f2e545]:
+              - generic [ref=f2e546]: 进行中
+              - generic [ref=f2e548]: 未设日期
+      - heading "最近会议" [level=2] [ref=f2e550]
+      - button [ref=f2e552] [cursor=pointer]:
+        - generic [ref=f2e557]:
+          - heading "隔离验收联席会" [level=3] [ref=f2e558]
+          - paragraph [ref=f2e559]: 已结束
+  - navigation "手机导航" [ref=f2e23]:
+    - button "首页" [ref=f2e24] [cursor=pointer]
+    - button "项目管理" [ref=f2e29] [cursor=pointer]
+    - button "产品库" [ref=f2e33] [cursor=pointer]
+    - button "工作台" [ref=f2e39] [cursor=pointer]

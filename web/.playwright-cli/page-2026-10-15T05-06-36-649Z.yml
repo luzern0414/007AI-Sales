@@ -1,0 +1,51 @@
+- generic [ref=f2e3]:
+  - generic [ref=f2e4]:
+    - banner [ref=f2e5]:
+      - button "行序" [ref=f2e6] [cursor=pointer]
+      - generic [ref=f2e11]:
+        - generic [ref=f2e12]: F
+        - button "退出登录" [ref=f2e14] [cursor=pointer]
+    - main [ref=f2e105]:
+      - button "项目管理" [ref=f2e106] [cursor=pointer]
+      - generic [ref=f2e109]:
+        - generic [ref=f2e110]:
+          - generic [ref=f2e111]: 项目
+          - heading "902Existing" [level=1] [ref=f2e112]
+        - button "编辑项目" [ref=f2e113] [cursor=pointer]
+      - generic [ref=f2e118]:
+        - generic [ref=f2e119]: 洽谈
+        - generic [ref=f2e120]: 进行中
+        - generic [ref=f2e121]: 未设日期
+        - generic [ref=f2e124]: 未设计划
+      - navigation "项目视图" [ref=f2e127]:
+        - button "概览" [ref=f2e128] [cursor=pointer]
+        - button "文件0" [ref=f2e129] [cursor=pointer]
+        - button "任务0" [ref=f2e130] [cursor=pointer]
+        - button "节点0" [ref=f2e131] [cursor=pointer]
+        - button "问题0" [ref=f2e132] [cursor=pointer]
+        - button "会议1" [ref=f2e133] [cursor=pointer]
+      - generic [ref=f2e134]:
+        - generic [ref=f2e135]: 正在整理
+        - button "名称纠错" [ref=f2e136] [cursor=pointer]
+      - generic [ref=f2e137]:
+        - generic [ref=f2e138]:
+          - term [ref=f2e139]: 上次
+          - definition [ref=f2e140]: 暂无记录
+        - generic [ref=f2e141]:
+          - term [ref=f2e142]: 本次
+          - definition [ref=f2e143]: 暂无记录
+        - generic [ref=f2e144]:
+          - term [ref=f2e145]: 下一步
+          - definition [ref=f2e146]: 暂无记录
+      - generic [ref=f2e147]:
+        - generic [ref=f2e148]: 项目目录
+        - generic [ref=f2e149]: C:\Users\Chilth\AppData\Local\Temp\sales-frontend-isolated-projects\902Existing
+      - heading "项目进展" [level=2] [ref=f2e151]
+      - paragraph [ref=f2e155]: 暂无进展
+      - group [ref=f2e156]:
+        - generic "全部动态 · 1" [ref=f2e157] [cursor=pointer]
+  - navigation "手机导航" [ref=f2e23]:
+    - button "首页" [ref=f2e24] [cursor=pointer]
+    - button "项目管理" [ref=f2e29] [cursor=pointer]
+    - button "产品库" [ref=f2e33] [cursor=pointer]
+    - button "工作台" [ref=f2e39] [cursor=pointer]

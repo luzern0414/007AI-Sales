@@ -1,0 +1,10 @@
+{
+  "name": "sales-project-tools",
+  "private": true,
+  "scripts": {
+    "format": "prettier --write \"web/src/**/*.{ts,tsx,css,mjs}\""
+  },
+  "devDependencies": {
+    "prettier": "3.6.2"
+  }
+}

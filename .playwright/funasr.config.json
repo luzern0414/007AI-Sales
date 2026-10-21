@@ -1,0 +1,26 @@
+{
+  "browser": {
+    "browserName": "chromium",
+    "launchOptions": {
+      "channel": "chrome",
+      "args": [
+        "--use-fake-device-for-media-stream",
+        "--use-fake-ui-for-media-stream",
+        "--use-file-for-fake-audio-capture=D:\\Codes\\007AI Sales\\output\\funasr\\shenzhen-kechuang\\realtime-check.wav"
+      ]
+    },
+    "contextOptions": {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "isMobile": true,
+      "hasTouch": true,
+      "deviceScaleFactor": 1,
+      "permissions": [
+        "microphone"
+      ]
+    }
+  },
+  "outputDir": "output/playwright"
+}

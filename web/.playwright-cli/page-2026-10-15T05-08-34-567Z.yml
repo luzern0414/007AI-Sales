@@ -1,0 +1,45 @@
+- generic [ref=f2e3]:
+  - generic [ref=f2e4]:
+    - banner [ref=f2e5]:
+      - button "行序" [ref=f2e6] [cursor=pointer]
+      - generic [ref=f2e11]:
+        - generic [ref=f2e12]: F
+        - button "退出登录" [ref=f2e14] [cursor=pointer]
+    - main [ref=f2e215]:
+      - button "首页" [ref=f2e220] [cursor=pointer]
+      - generic [ref=f2e223]:
+        - heading "隔离验收联席会" [level=1] [ref=f2e224]
+        - button "编辑" [ref=f2e225] [cursor=pointer]
+      - generic [ref=f2e226]:
+        - button "901FrontendCreated" [ref=f2e227] [cursor=pointer]
+        - button "902Existing" [ref=f2e231] [cursor=pointer]
+        - button "名称纠错" [ref=f2e235] [cursor=pointer]
+      - generic [ref=f2e236]:
+        - status [ref=f2e237]: 等待重新整理
+        - button "已提交" [disabled] [ref=f2e281]
+      - generic [ref=f2e239]:
+        - generic [ref=f2e240]:
+          - text: 已结束
+          - strong
+        - link "录音" [ref=f2e242] [cursor=pointer]:
+          - /url: /api/meetings/3fa78d37acef4175be80053805e4d65c/audio
+      - heading "会议记录" [level=2] [ref=f2e247]
+      - textbox "会议记录" [ref=f2e248]: 隔离手机验收：讨论费用审批，下一步确认规则。
+      - generic [ref=f2e249]:
+        - heading "校对转写" [level=2] [ref=f2e250]
+        - button "保存" [ref=f2e251] [cursor=pointer]
+      - textbox "转写内容" [ref=f2e256]
+      - heading "实时转写" [level=2] [ref=f2e258]
+      - generic [ref=f2e259]: 暂无转写
+      - heading "文档" [level=2] [ref=f2e261]
+      - generic [ref=f2e262]:
+        - button "生成方案与清单" [ref=f2e263] [cursor=pointer]
+        - button "纪要 MD" [ref=f2e267] [cursor=pointer]
+        - button "纪要 PDF" [ref=f2e271] [cursor=pointer]
+      - heading "方案与清单" [level=2] [ref=f2e276]
+      - paragraph [ref=f2e280]: 暂无方案与清单
+  - navigation "手机导航" [ref=f2e23]:
+    - button "首页" [ref=f2e24] [cursor=pointer]
+    - button "项目管理" [ref=f2e29] [cursor=pointer]
+    - button "产品库" [ref=f2e33] [cursor=pointer]
+    - button "工作台" [ref=f2e39] [cursor=pointer]

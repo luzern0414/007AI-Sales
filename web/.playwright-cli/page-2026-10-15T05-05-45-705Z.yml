@@ -1,0 +1,48 @@
+- generic [ref=f1e22]:
+  - generic [ref=f1e23]:
+    - banner [ref=f1e24]:
+      - button "行序" [ref=f1e25] [cursor=pointer]
+      - generic [ref=f1e30]:
+        - generic [ref=f1e31]: F
+        - button "退出登录" [ref=f1e33] [cursor=pointer]
+    - main [ref=f1e472]:
+      - button "首页" [ref=f1e477] [cursor=pointer]
+      - generic [ref=f1e480]:
+        - heading "隔离验收联席会" [level=1] [ref=f1e546]
+        - button "编辑" [ref=f1e482] [cursor=pointer]
+      - generic [ref=f1e483]:
+        - button "901FrontendCreated" [ref=f1e547] [cursor=pointer]
+        - button "902Existing" [ref=f1e551] [cursor=pointer]
+        - button "名称纠错" [ref=f1e485] [cursor=pointer]
+      - status [ref=f1e486]: 正在整理会议
+      - generic [ref=f1e487]:
+        - generic [ref=f1e488]:
+          - text: 已结束
+          - strong [ref=f1e489]: 00:37
+        - link "录音" [ref=f1e491] [cursor=pointer]:
+          - /url: /api/meetings/3fa78d37acef4175be80053805e4d65c/audio
+        - generic [ref=f1e495]:
+          - generic [ref=f1e496]: 本段本机 00:37
+          - generic [ref=f1e497]: 本段云端 00:37
+      - heading "会议记录" [level=2] [ref=f1e499]
+      - textbox "会议记录" [ref=f1e500]: 隔离手机验收：讨论费用审批，下一步确认规则。
+      - generic [ref=f1e501]:
+        - heading "校对转写" [level=2] [ref=f1e502]
+        - button "保存" [ref=f1e503] [cursor=pointer]
+      - textbox "转写内容" [ref=f1e508]
+      - generic [ref=f1e509]:
+        - heading "实时转写" [level=2] [ref=f1e510]
+        - generic [ref=f1e511]: 转写未连接
+      - generic [ref=f1e512]: 暂无转写
+      - heading "文档" [level=2] [ref=f1e514]
+      - generic [ref=f1e515]:
+        - button "生成方案与清单" [ref=f1e516] [cursor=pointer]
+        - button "纪要 MD" [ref=f1e520] [cursor=pointer]
+        - button "纪要 PDF" [ref=f1e524] [cursor=pointer]
+      - heading "方案与清单" [level=2] [ref=f1e556]
+      - paragraph [ref=f1e560]: 暂无方案与清单
+  - navigation "手机导航" [ref=f1e66]:
+    - button "首页" [ref=f1e67] [cursor=pointer]
+    - button "项目管理" [ref=f1e72] [cursor=pointer]
+    - button "产品库" [ref=f1e76] [cursor=pointer]
+    - button "工作台" [ref=f1e82] [cursor=pointer]

@@ -1,0 +1,15 @@
+.firecrawl/
+.venv/
+.venv-asr/
+__pycache__/
+.pytest_cache/
+*.pyc
+.env
+data/
+web/node_modules/
+web/dist/
+output/
+node_modules/
+config/local.env
+
+.venv-asr-gpu/

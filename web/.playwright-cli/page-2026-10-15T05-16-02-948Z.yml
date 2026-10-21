@@ -1,0 +1,48 @@
+- generic [ref=f3e3]:
+  - generic [ref=f3e4]:
+    - banner [ref=f3e5]:
+      - button "行序" [ref=f3e6] [cursor=pointer]
+      - generic [ref=f3e11]:
+        - generic [ref=f3e12]: F
+        - button "退出登录" [ref=f3e14] [cursor=pointer]
+    - main [ref=f3e18]:
+      - button "首页" [ref=f3e46] [cursor=pointer]
+      - generic [ref=f3e49]:
+        - heading "隔离验收联席会" [level=1] [ref=f3e50]
+        - button "编辑" [ref=f3e51] [cursor=pointer]
+      - generic [ref=f3e52]:
+        - button "901FrontendCreated" [ref=f3e53] [cursor=pointer]
+        - button "902Existing" [ref=f3e57] [cursor=pointer]
+        - button "名称纠错" [ref=f3e61] [cursor=pointer]
+      - paragraph [ref=f3e62]: 隔离验收：本次讨论费用审批，建议确认规则。
+      - generic [ref=f3e63]:
+        - generic [ref=f3e64]:
+          - text: 已结束
+          - strong
+        - link "录音" [ref=f3e66] [cursor=pointer]:
+          - /url: /api/meetings/3fa78d37acef4175be80053805e4d65c/audio
+      - heading "会议记录" [level=2] [ref=f3e71]
+      - textbox "会议记录" [ref=f3e72]: 隔离手机验收：讨论费用审批，下一步确认规则。
+      - generic [ref=f3e73]:
+        - heading "校对转写" [level=2] [ref=f3e74]
+        - button "保存" [ref=f3e75] [cursor=pointer]
+      - textbox "转写内容" [ref=f3e80]
+      - heading "实时转写" [level=2] [ref=f3e82]
+      - generic [ref=f3e83]: 暂无转写
+      - heading "文档" [level=2] [ref=f3e85]
+      - generic [ref=f3e86]:
+        - text: 方案项目
+        - combobox "方案项目" [ref=f3e87]:
+          - option "901FrontendCreated" [selected]
+          - option "902Existing"
+      - generic [ref=f3e88]:
+        - button "生成方案与清单" [ref=f3e89] [cursor=pointer]
+        - button "纪要 MD" [ref=f3e93] [cursor=pointer]
+        - button "纪要 PDF" [ref=f3e97] [cursor=pointer]
+      - heading "方案与清单" [level=2] [ref=f3e108]
+      - paragraph [ref=f3e112]: 暂无方案与清单
+  - navigation "手机导航" [ref=f3e23]:
+    - button "首页" [ref=f3e24] [cursor=pointer]
+    - button "项目管理" [ref=f3e29] [cursor=pointer]
+    - button "产品库" [ref=f3e33] [cursor=pointer]
+    - button "工作台" [ref=f3e39] [cursor=pointer]

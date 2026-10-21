@@ -1,0 +1,58 @@
+async page => {
+ const base='http://127.0.0.1:18767',pid='7df6a62d5da4468ea8a84e69dc56d753';
+ const check=(v,m)=>{if(!v)throw Error(m)};
+ const results=[];
+ await page.goto(base+'/#projects/'+pid);await page.reload();await page.locator('.timeline-entry').first().waitFor();
+ check(await page.getByRole('navigation',{name:'项目视图'}).getByRole('button').count()===3,'only three project tabs');
+ await page.locator('.timeline-detail > summary').filter({hasText:'审批方案'}).click();
+ check(await page.locator('.timeline-detail[open] .attachment').count()===2,'Word/PDF grouping');
+ await page.locator('.timeline-detail[open] > summary').click();
+ await page.locator('.timeline-detail > summary').filter({hasText:'客户提供-需求'}).click();
+ await page.locator('.timeline-detail[open] .attachment').click();
+ await page.locator('dialog .markdown h1').waitFor();
+ check(await page.locator('dialog .markdown strong').count()>0,'bold markdown rendering');
+ check(await page.locator('dialog .markdown table').count()===1,'GFM table rendering');
+ const origin=await page.getByLabel('资料提供方').inputValue()==='ours'?'client':'ours';
+ await Promise.all([page.waitForResponse(r=>r.url().endsWith('/origin')&&r.request().method()==='PATCH'),page.getByLabel('资料提供方').selectOption(origin)]);
+ await page.getByRole('button',{name:'关闭',exact:true}).click();
+ await page.locator('.timeline-detail[open] .attachment').click();
+ await page.getByLabel('资料提供方').waitFor();
+ check(await page.getByLabel('资料提供方').inputValue()===origin,'origin persisted');
+ await page.getByRole('button',{name:'关闭',exact:true}).click();
+ await page.getByRole('button',{name:'补充项目信息',exact:true}).click();
+ await page.getByLabel('项目背景').fill('验收环境：客户采购协同审批，需保留原始材料。');
+ await page.getByLabel('本次分析要求').fill('验收环境：重点跟踪接口开放和提交方案。');
+ await page.getByRole('button',{name:'同步给 Agent',exact:true}).click();
+ await page.locator('dialog').waitFor({state:'hidden'});
+ let flow=await (await page.request.get(base+'/api/projects/'+pid+'/workflow')).json();
+ check(flow.analysis.background.includes('采购协同审批')&&flow.analysis.instructions.includes('提交方案'),'agent background persisted');
+ const already=flow.nodes[0].confirmed;
+ await page.getByRole('button',{name:already?'客户洽谈，已确认':'确认节点：客户洽谈',exact:true}).click();
+ await page.getByLabel('实际发生时间').fill('2026-10-13T14:30');
+ await page.getByLabel('确认依据').fill('验收环境：客户现场沟通，已留存录音与会议纪要。');
+ await page.locator('dialog').getByRole('button',{name:already?'更新确认':'确认节点',exact:true}).click();
+ await page.locator('dialog').waitFor({state:'hidden'});
+ await page.getByRole('button',{name:'已确认1个节点，共8个'}).waitFor();
+ await page.reload();await page.getByRole('button',{name:'已确认1个节点，共8个'}).waitFor();
+ flow=await (await page.request.get(base+'/api/projects/'+pid+'/workflow')).json();
+ check(flow.nodes[0].confirmed&&flow.history.length>0,'confirmation persists with audit');
+ await page.waitForFunction(()=>document.querySelector('.compact-summary')?.textContent.includes('已确认1个'),null,{timeout:25000});
+ for(const width of [320,390,1280]){
+  await page.setViewportSize({width,height:844});await page.evaluate(()=>scrollTo(0,0));
+  check(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'horizontal overflow '+width);
+  const sizes=await page.locator('.compact-hero').boundingBox();check(sizes.height<190,'hero too large');
+  await page.screenshot({path:'output/playwright/workflow/dense-project-'+width+'.png'});
+  results.push({width,hero_height:Math.round(sizes.height)});
+ }
+ await page.setViewportSize({width:390,height:844});await page.getByRole('button',{name:'返回上一级'}).click();
+ await page.locator('.project-row').first().waitFor();
+ const heights=await page.locator('.project-row').evaluateAll(es=>es.map(e=>Math.round(e.getBoundingClientRect().height)));
+ check(heights.every(h=>h<115),'project rows too tall');
+ await page.screenshot({path:'output/playwright/workflow/dense-project-list.png'});
+ await page.getByRole('navigation',{name:'手机导航'}).getByRole('button',{name:'首页',exact:true}).click();
+ await page.getByRole('button',{name:'开始录音记录',exact:true}).waitFor();
+ check(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'home horizontal overflow');
+ check(!(await page.locator('main').innerText()).includes('星期'),'home date placeholder');
+ await page.screenshot({path:'output/playwright/workflow/dense-home.png'});
+ return {checks:'grouping,markdown,origin,background,confirm,persistence,agent-refresh,back,home',screens:results,project_card_heights:heights};
+}

@@ -1,0 +1,52 @@
+- generic [ref=e26]:
+  - generic [ref=e27]:
+    - banner [ref=e28]:
+      - button "行序" [ref=e29] [cursor=pointer]
+      - generic [ref=e34]:
+        - generic [ref=e35]: F
+        - button "退出登录" [ref=e37] [cursor=pointer]
+    - main [ref=e41]:
+      - generic [ref=e42]:
+        - generic [ref=e43]:
+          - generic [ref=e44]: 10月15日星期四
+          - heading "今天" [level=1] [ref=e45]
+        - button "新建项目" [ref=e46] [cursor=pointer]
+      - button "开始录音记录" [ref=e48] [cursor=pointer]
+      - button "0 项待跟进 0 项逾期 · 0 项受阻" [ref=e49] [cursor=pointer]:
+        - generic [ref=e53]:
+          - strong [ref=e54]: 0 项待跟进
+          - generic [ref=e55]: 0 项逾期 · 0 项受阻
+      - generic [ref=e59]:
+        - heading "最近项目" [level=2] [ref=e60]
+        - button "全部" [ref=e61] [cursor=pointer]
+      - generic [ref=e64]:
+        - paragraph [ref=e67]: 暂无项目
+        - button "新建项目" [ref=e68] [cursor=pointer]
+      - dialog [ref=e93]:
+        - generic [ref=e94]:
+          - heading "新建项目" [level=2] [ref=e95]
+          - button "关闭" [active] [ref=e96] [cursor=pointer]
+        - group [ref=e101]:
+          - generic [ref=e102]:
+            - text: 项目名称
+            - textbox "项目名称" [ref=e103]:
+              - /placeholder: 可选，默认使用目录名称
+          - generic [ref=e104]:
+            - text: 项目目录
+            - combobox "项目目录" [ref=e105]:
+              - option "新建目录"
+              - option "选择已有目录"
+              - option "暂不设置" [selected]
+          - alert [ref=e108]: Not Found
+          - generic [ref=e111]:
+            - text: 客户名称
+            - textbox "客户名称" [ref=e112]
+          - generic [ref=e113]:
+            - text: 计划交付
+            - textbox "计划交付" [ref=e114]
+          - button "保存" [ref=e115] [cursor=pointer]
+  - navigation "手机导航" [ref=e70]:
+    - button "首页" [ref=e71] [cursor=pointer]
+    - button "项目管理" [ref=e76] [cursor=pointer]
+    - button "产品库" [ref=e80] [cursor=pointer]
+    - button "工作台" [ref=e86] [cursor=pointer]

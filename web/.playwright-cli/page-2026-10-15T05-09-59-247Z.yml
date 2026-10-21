@@ -1,0 +1,60 @@
+- generic [ref=f2e3]:
+  - generic [ref=f2e4]:
+    - banner [ref=f2e5]:
+      - button "行序" [ref=f2e6] [cursor=pointer]
+      - generic [ref=f2e11]:
+        - generic [ref=f2e12]: F
+        - button "退出登录" [ref=f2e14] [cursor=pointer]
+    - main [ref=f2e282]:
+      - button "项目管理" [ref=f2e287] [cursor=pointer]
+      - generic [ref=f2e290]:
+        - generic [ref=f2e291]:
+          - generic [ref=f2e292]: 项目
+          - heading "902Existing" [level=1] [ref=f2e293]
+        - button "编辑项目" [ref=f2e294] [cursor=pointer]
+      - generic [ref=f2e299]:
+        - generic [ref=f2e300]: 洽谈
+        - generic [ref=f2e301]: 进行中
+        - generic [ref=f2e302]: 未设日期
+        - generic [ref=f2e305]: 未设计划
+      - navigation "项目视图" [ref=f2e308]:
+        - button "概览" [active] [ref=f2e309] [cursor=pointer]
+        - button "文件1" [ref=f2e310] [cursor=pointer]
+        - button "任务0" [ref=f2e311] [cursor=pointer]
+        - button "节点0" [ref=f2e312] [cursor=pointer]
+        - button "问题0" [ref=f2e313] [cursor=pointer]
+        - button "会议1" [ref=f2e314] [cursor=pointer]
+      - button "名称纠错" [ref=f2e399] [cursor=pointer]
+      - paragraph [ref=f2e400]: 隔离验收：本次收到费用审批需求，规则尚待确认，下一步建议核对审批规则。
+      - generic [ref=f2e401]:
+        - generic [ref=f2e402]:
+          - term [ref=f2e403]: 上次
+          - definition [ref=f2e404]: 此前审批规则待确认。
+        - generic [ref=f2e405]:
+          - term [ref=f2e406]: 本次
+          - definition [ref=f2e407]: 收到费用审批需求。
+        - generic [ref=f2e408]:
+          - term [ref=f2e409]: 下一步
+          - definition [ref=f2e410]: 建议核对审批规则。
+      - generic [ref=f2e411]:
+        - generic [ref=f2e412]: 项目目录
+        - generic [ref=f2e413]: C:\Users\Chilth\AppData\Local\Temp\sales-frontend-isolated-projects\902Existing
+      - heading "项目进展" [level=2] [ref=f2e415]
+      - generic [ref=f2e416]:
+        - article [ref=f2e417]:
+          - time [ref=f2e418]: 2026/10/15 13:00 · 会议记录时间
+          - heading "隔离测试会议摘要" [level=3] [ref=f2e419]
+          - paragraph [ref=f2e420]: 隔离验收：本次收到费用审批需求，规则尚待确认，下一步建议核对审批规则。
+          - button "来源：隔离验收联席会" [ref=f2e421] [cursor=pointer]
+        - article [ref=f2e422]:
+          - time [ref=f2e423]: 2026/10/15 13:00 · 文件更新时间
+          - heading "[codes] 隔离验收需求.md" [level=3] [ref=f2e424]
+          - paragraph [ref=f2e425]: 隔离验收：本次收到费用审批需求，规则尚待确认，下一步建议核对审批规则。
+          - button "来源：[codes] 隔离验收需求.md" [ref=f2e426] [cursor=pointer]
+      - group [ref=f2e427]:
+        - generic "全部动态 · 3" [ref=f2e428] [cursor=pointer]
+  - navigation "手机导航" [ref=f2e23]:
+    - button "首页" [ref=f2e24] [cursor=pointer]
+    - button "项目管理" [ref=f2e29] [cursor=pointer]
+    - button "产品库" [ref=f2e33] [cursor=pointer]
+    - button "工作台" [ref=f2e39] [cursor=pointer]

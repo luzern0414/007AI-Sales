@@ -1,0 +1,46 @@
+- generic [ref=f1e22]:
+  - generic [ref=f1e23]:
+    - banner [ref=f1e24]:
+      - button "行序" [ref=f1e25] [cursor=pointer]
+      - generic [ref=f1e30]:
+        - generic [ref=f1e31]: F
+        - button "退出登录" [ref=f1e33] [cursor=pointer]
+    - main [ref=f1e192]:
+      - button "首页" [ref=f1e193] [cursor=pointer]
+      - generic [ref=f1e196]:
+        - heading "录音记录 10月15日 13:00" [level=1] [ref=f1e197]
+        - button "编辑" [ref=f1e198] [cursor=pointer]
+      - generic [ref=f1e199]:
+        - button "待归类 · 关联项目" [ref=f1e200] [cursor=pointer]
+        - button "名称纠错" [ref=f1e201] [cursor=pointer]
+      - status [ref=f1e202]: 正在整理会议
+      - generic [ref=f1e203]:
+        - generic [ref=f1e204]:
+          - text: 已结束
+          - strong [ref=f1e206]: 00:37
+        - generic [ref=f1e212]:
+          - generic [ref=f1e213]: 本段本机 00:37
+          - generic [ref=f1e214]: 本段云端 00:37
+      - generic [ref=f1e215]:
+        - heading "会议记录" [level=2] [ref=f1e216]
+        - generic [ref=f1e248]: 已保存
+      - textbox "会议记录" [ref=f1e217]: 隔离手机验收：讨论费用审批，下一步确认规则。
+      - generic [ref=f1e218]:
+        - heading "校对转写" [level=2] [ref=f1e219]
+        - button "保存" [ref=f1e220] [cursor=pointer]
+      - textbox "转写内容" [ref=f1e225]
+      - generic [ref=f1e226]:
+        - heading "实时转写" [level=2] [ref=f1e227]
+        - generic [ref=f1e228]: 转写未连接
+      - generic [ref=f1e229]: 暂无转写
+      - heading "文档" [level=2] [ref=f1e231]
+      - generic [ref=f1e232]:
+        - button "生成方案与清单" [disabled] [ref=f1e233]
+        - button "纪要 MD" [ref=f1e237] [cursor=pointer]
+        - button "纪要 PDF" [ref=f1e241] [cursor=pointer]
+      - button "关联项目后生成方案与清单" [ref=f1e245] [cursor=pointer]
+  - navigation "手机导航" [ref=f1e66]:
+    - button "首页" [ref=f1e67] [cursor=pointer]
+    - button "项目管理" [ref=f1e72] [cursor=pointer]
+    - button "产品库" [ref=f1e76] [cursor=pointer]
+    - button "工作台" [ref=f1e82] [cursor=pointer]

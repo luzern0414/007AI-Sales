@@ -1,0 +1,29 @@
+- generic [ref=f1e22]:
+  - generic [ref=f1e23]:
+    - banner [ref=f1e24]:
+      - button "行序" [ref=f1e25] [cursor=pointer]
+      - generic [ref=f1e30]:
+        - generic [ref=f1e31]: F
+        - button "退出登录" [ref=f1e33] [cursor=pointer]
+    - main [ref=f1e37]:
+      - generic [ref=f1e38]:
+        - generic [ref=f1e39]:
+          - generic [ref=f1e40]: 10月15日星期四
+          - heading "今天" [level=1] [ref=f1e41]
+        - button "新建项目" [ref=f1e42] [cursor=pointer]
+      - button "开始录音记录" [ref=f1e44] [cursor=pointer]
+      - button "0 项待跟进 0 项逾期 · 0 项受阻" [ref=f1e45] [cursor=pointer]:
+        - generic [ref=f1e49]:
+          - strong [ref=f1e50]: 0 项待跟进
+          - generic [ref=f1e51]: 0 项逾期 · 0 项受阻
+      - generic [ref=f1e55]:
+        - heading "最近项目" [level=2] [ref=f1e56]
+        - button "全部" [ref=f1e57] [cursor=pointer]
+      - generic [ref=f1e60]:
+        - paragraph [ref=f1e63]: 暂无项目
+        - button "新建项目" [ref=f1e64] [cursor=pointer]
+  - navigation "手机导航" [ref=f1e66]:
+    - button "首页" [ref=f1e67] [cursor=pointer]
+    - button "项目管理" [ref=f1e72] [cursor=pointer]
+    - button "产品库" [ref=f1e76] [cursor=pointer]
+    - button "工作台" [ref=f1e82] [cursor=pointer]
